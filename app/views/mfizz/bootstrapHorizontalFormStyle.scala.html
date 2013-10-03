@@ -1,0 +1,31 @@
+@*
+ * Puts elements into a control-group w/ label and optional help inline.
+ *
+ * At the top of your template
+ * 
+ *  @implicitField = @{ helper.FieldConstructor(mfizz.bootstrapHorizontalFormStyle.f) }
+ *
+ * Usage:
+ *   @helper.form(action = fh.getAction(), 'id -> "article-form", 'class -> "form-horizontal") {
+ *      	
+ 
+ *   To populate a "help-block" span underneath a form element.
+ *   '_info -> "value"
+ 
+ *	 }
+ *@
+@(elements: views.html.helper.FieldElements)
+
+@import play.api.i18n._
+@import views.html.helper._
+
+<div class="control-group@if(elements.hasErrors) { error}" id="control-group-@elements.id">
+  <label class="control-label" for="@elements.id">@elements.label(elements.lang)</label>
+  <div class="controls">
+  	@elements.input
+  	@if(elements.args.get('_nohelp).getOrElse(false) == false) {
+  	<span class="help-inline">@elements.errors(elements.lang).mkString(", ")</span>
+  	<span class="help-block">@elements.args.get('_info).getOrElse("")</span>
+  	}
+  </div>
+</div>

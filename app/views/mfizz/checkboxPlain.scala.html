@@ -1,0 +1,21 @@
+@**
+ * Hidden input element.  Usage:
+ * 
+ * Default
+ *   @mfizz.inputHidden(form("name"))
+ *
+ * Overriding default id
+ *   @mfizz.inputHidden(form("id"), 'id -> "myid")
+ *
+ * Add class
+ *   @mfizz.inputHidden(form("id"), 'id -> "myid", '_class -> "uneditable")
+ * 
+ *@
+@(field: play.api.data.Field, args: (Symbol,Any)*)
+
+@boxValue = @{ args.toMap.get('value).getOrElse("true") }
+
+<label class="checkbox@if(args.toMap.get('_inline)) { inline}">
+  <input type="checkbox" id="@field.id" name="@field.name" value="@boxValue" @(if(field.value == Some(boxValue)) "checked" else "") @toHtmlArgs(args.toMap.filterKeys(_ != 'value))>
+  @args.toMap.get('_text)
+</label>
