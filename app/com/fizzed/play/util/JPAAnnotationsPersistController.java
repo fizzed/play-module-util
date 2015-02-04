@@ -1,4 +1,4 @@
-package com.mfizz.play.util;
+package com.fizzed.play.util;
 
 import com.avaje.ebean.event.BeanPersistAdapter;
 import com.avaje.ebean.event.BeanPersistRequest;

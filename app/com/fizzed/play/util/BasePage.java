@@ -1,6 +1,6 @@
-package com.mfizz.play.util;
+package com.fizzed.play.util;
 
-import static com.mfizz.play.util.Page.*;
+import static com.fizzed.play.util.Page.*;
 
 import java.util.Collections;
 import java.util.Map;

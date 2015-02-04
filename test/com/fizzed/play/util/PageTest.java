@@ -1,4 +1,4 @@
-package com.mfizz.play.util;
+package com.fizzed.play.util;
 
 import java.util.HashMap;
 import java.util.List;
@@ -7,7 +7,11 @@ import java.util.Map;
 import junit.framework.Assert;
 
 import org.junit.Test;
-import static com.mfizz.play.util.Page.*;
+
+import com.fizzed.play.util.Page;
+import com.fizzed.play.util.PageBuilder;
+
+import static com.fizzed.play.util.Page.*;
 
 public class PageTest {
 

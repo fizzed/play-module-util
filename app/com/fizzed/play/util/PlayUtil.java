@@ -1,4 +1,4 @@
-package com.mfizz.play.util;
+package com.fizzed.play.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;

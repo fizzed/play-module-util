@@ -20,6 +20,7 @@ object ApplicationBuild extends Build {
     organizationHomepage := Some(new URL("http://fizzed.com")),
     
     // required for publishing artifact to maven central via sonatype
+    credentials += Credentials(Path.userHome / ".sbt" / "sonatype.credentials"),
     publishMavenStyle := true,
     publishTo <<= version { v: String =>
 	  val nexus = "https://oss.sonatype.org/"
