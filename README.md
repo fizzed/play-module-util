@@ -1,8 +1,6 @@
 Utility Module for PlayFramework
 ================================
 
-## By
-
  - [Fizzed, Inc.](http://fizzed.com)
  - Joe Lauer (Twitter: [@jjlauer](http://twitter.com/jjlauer))
 
@@ -26,7 +24,7 @@ rendering/handling, and controllers.
 The first step is include the module in your dependencies list, in `build.sbt` or `Build.scala` file:
 
 
-### `build.sbt`
+### build.sbt
 
 ```scala
 libraryDependencies ++= Seq(
@@ -34,7 +32,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-### `Build.scala`
+### Build.scala
 
 ```scala
 import sbt._
