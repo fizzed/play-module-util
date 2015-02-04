@@ -5,8 +5,8 @@ import java.net.URL
 
 object ApplicationBuild extends Build {
 
-  val appName         = "mfz-play-module-util"
-  val appVersion      = "1.0"
+  val appName         = "fizzed-play-module-util"
+  val appVersion      = "1.0.0"
 
   val appDependencies = Seq(
     javaCore,
@@ -15,9 +15,9 @@ object ApplicationBuild extends Build {
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
-    organization := "com.mfizz",
-    organizationName := "Mfizz Inc",
-    organizationHomepage := Some(new URL("http://mfizz.com")),
+    organization := "com.fizzed",
+    organizationName := "Fizzed, Inc.",
+    organizationHomepage := Some(new URL("http://fizzed.com")),
     
     // required for publishing artifact to maven central via sonatype
     publishMavenStyle := true,
@@ -31,21 +31,17 @@ object ApplicationBuild extends Build {
 	
 	// in order to pass sonatype's requirements the following properties are required as well
 	startYear := Some(2013),
-	description := "Play framework 2.x utility module used across Mfizz projects",
+	description := "PlayFramework 2.1 utility module used across Fizzed projects",
     licenses := Seq("Apache 2" -> url("http://www.apache.org/licenses/LICENSE-2.0.txt")),
-    homepage := Some(url("http://mfizz.com/oss/play-module-util")),
-    scmInfo := Some(ScmInfo(url("https://github.com/mfizz-inc/play-module-util"), "https://github.com/mfizz-inc/play-module-util.git")),
+    homepage := Some(url("http://fizzed.com/oss/play-module-util")),
+    scmInfo := Some(ScmInfo(url("https://github.com/fizzed/play-module-util"), "https://github.com/fizzed/play-module-util.git")),
     pomExtra := (
       <developers>
         <developer>
-    	  <name>Mfizz Inc (twitter: @mfizz_inc)</name>
-          <email>oss@mfizz.com</email>
-        </developer>
-        <developer>
-    	  <name>Joe Lauer (twitter: @jjlauer)</name>
+    	    <name>Fizzed Inc</name>
+          <email>oss@fizzed.com</email>
         </developer>
       </developers>
     )
   )
-
 }
