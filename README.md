@@ -1,5 +1,5 @@
-Utility Module for PlayFramework by Fizzed
-==========================================
+Utility Module for PlayFramework
+================================
 
 ## By
 
