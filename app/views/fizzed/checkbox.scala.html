@@ -11,7 +11,7 @@
  *   @mfizz.inputHidden(form("id"), 'id -> "myid", '_class -> "uneditable")
  * 
  *@
-@(field: play.api.data.Field, args: (Symbol,Any)*)(implicit handler: helper.FieldConstructor, lang: play.api.i18n.Lang)
+@(field: play.api.data.Field, args: (Symbol,Any)*)(implicit handler: helper.FieldConstructor)
 
 @boxValue = @{ args.toMap.get('value).getOrElse("true") }
 

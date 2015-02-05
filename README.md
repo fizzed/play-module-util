@@ -16,6 +16,7 @@ rendering/handling, and controllers.
 
 | PlayFramework version | Module version | 
 |:----------------------|:---------------|
+| 2.3.x                 | 1.2.0          |
 | 2.2.x                 | 1.1.0          |
 | 2.1.x                 | 1.0.0          |
 
@@ -30,7 +31,7 @@ dependencies list, in `build.sbt` or `Build.scala` file:
 
 ```scala
 libraryDependencies ++= Seq(
-  "com.fizzed" %% "fizzed-play-module-util" % "1.1.0"
+  "com.fizzed" %% "fizzed-play-module-util" % "1.2.0"
 )
 ```
 
@@ -50,7 +51,7 @@ object ApplicationBuild extends Build {
     javaCore,
     javaJdbc,
     javaEbean,
-    "com.fizzed" %% "fizzed-play-module-util" % "1.1.0"
+    "com.fizzed" %% "fizzed-play-module-util" % "1.2.0"
   )
   
   ...
