@@ -6,7 +6,7 @@ import java.net.URL
 object ApplicationBuild extends Build {
 
   val appName         = "fizzed-play-module-util"
-  val appVersion      = "1.0.0"
+  val appVersion      = "1.1.0"
 
   val appDependencies = Seq(
     javaCore,
