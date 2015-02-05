@@ -7,8 +7,8 @@ Utility Module for PlayFramework
 
 ## Overview
 
-This is a utility module for [Play Framework](http://www.playframework.org/) 2.x. It provides
-utility classes for search engine optimization, social network (card) integration, form
+[Play Framework](http://www.playframework.org/) 2.x module that provides utility classes.
+Classes for search engine optimization, social network (card) integration, form 
 rendering/handling, and controllers.
 
 
