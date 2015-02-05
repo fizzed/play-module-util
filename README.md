@@ -21,7 +21,8 @@ rendering/handling, and controllers.
 
 ## Usage
 
-The first step is include the module in your dependencies list, in `build.sbt` or `Build.scala` file:
+This module is published to Maven Central.  You will need to include the module in your
+dependencies list, in `build.sbt` or `Build.scala` file:
 
 
 ### build.sbt
